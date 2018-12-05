@@ -2,9 +2,9 @@
 * Documentation author: Marwen Gharsalli
 * Email               : marwen.garsalli@ensi-uma.tn
 #######################################################################################
-This project was created to help linux people be aware that they can be hacked. 
-There is no doubt that linux is safer than windows but, security can never be assured 100% .
-/!\ Email me to get the Library.
+This project was created to help linux people to be aware that they can be hacked. 
+There is no doubt that linux is more secure than windows but, security can never be assured 100% .
+/!\ Email me to get the Library. This project is for educational purpose, I am not responsible for malicious purpose.
 
 #        +-------------------------------------+
 #        |  Hardware Platforms requirements    |
