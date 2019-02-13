@@ -22,7 +22,16 @@ For Linux Platform:
 #        +-------------------------------------+
 #        |        Deployment and Usage         |
 #        +-------------------------------------+
-1/ Build: g++ -o test key.cpp KeyloggerLib.cpp -lpthread -X11
-3/ Run the project: sudo ./test
-2/ Check for log file which has been created and it contains not only the pressed key but also the active windows of each pressed keys.
+An example build session targeting the build platform could look like this:
 
+```
+$ git clone https://github.com/MarvenGarsalli/Linux_Keylogger
+$ cd Linux_Keylogger
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+$ ./test
+
+```
+=> This will create a .system file which contains pressed buttons per window name
